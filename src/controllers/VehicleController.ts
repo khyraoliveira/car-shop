@@ -10,7 +10,7 @@ abstract class VehicleController<T> {
   }
   public async read(req: Request, res: Response<T[]>) {
     const listVehicle = await this._service.read();
-    return res.status(201).json(listVehicle);
+    return res.status(200).json(listVehicle);
   }
 }
 
