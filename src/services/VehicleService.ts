@@ -8,8 +8,12 @@ class VehicleService<T> implements IService<T> {
   public async create(obj: T) {
     const parsed = this._zodSchema.safeParse(obj);
     if (!parsed.success) throw parsed.error;
-    const created = this._vehicleModel.create(parsed.data);
+    const created = await this._vehicleModel.create(parsed.data);
     return created;
+  }
+  public async read() {
+    const listVehicle = await this._vehicleModel.read();
+    return listVehicle;
   }
 }
 
