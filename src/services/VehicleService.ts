@@ -1,6 +1,6 @@
 import { ZodSchema } from 'zod';
-import IModel from '../interfaces/IModel';
-import IService from '../interfaces/IService';
+import { IModel } from '../interfaces/IModel';
+import { IService } from '../interfaces/IService';
 
 class VehicleService<T> implements IService<T> {
   constructor(protected _vehicleModel:IModel<T>, protected _zodSchema:ZodSchema<T>) {
