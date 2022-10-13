@@ -15,6 +15,10 @@ class VehicleService<T> implements IService<T> {
     const listVehicle = await this._vehicleModel.read();
     return listVehicle;
   }
+  public async readOne(_id: string): Promise<T | null> {
+    const listOne = await this._vehicleModel.readOne(_id);
+    return listOne;
+  }
 }
 
 export default VehicleService;
