@@ -1,11 +1,11 @@
 import { Router } from 'express';
 import MotorcycleController from '../controllers/MotorcycleController';
-import MotorcycleModel from '../models/MotorcyclesModel';
+import MotorcyclesModel from '../models/MotorcyclesModel';
 import MotorcycleService from '../services/MotorcycleService';
 
 const route = Router();
 
-const motorcycles = new MotorcycleModel();
+const motorcycles = new MotorcyclesModel();
 const motorcycleService = new MotorcycleService(motorcycles);
 const motorcycleController = new MotorcycleController(motorcycleService);
 
