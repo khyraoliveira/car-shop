@@ -12,10 +12,10 @@ const motorcycleMongooseSchema = new Schema<IMotorcycle>({
   status: Boolean,
 }, { versionKey: false });
 
-class MotorcycleModel extends MongoModel<IMotorcycle> {
+class MotorcyclesModel extends MongoModel<IMotorcycle> {
   constructor(model = mongooseCreateModel('motorcycles', motorcycleMongooseSchema)) {
     super(model);
   }
 }
 
-export default MotorcycleModel;
+export default MotorcyclesModel;
