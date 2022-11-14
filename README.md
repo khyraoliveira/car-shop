@@ -11,7 +11,7 @@ No **Car Shop** apliquei os princípios de **Programação Orientada a Objetos (
 - Sequelize;
 - Nos testes de integração: Mocha, Chai e Sinon;
 - Docker;
-- MongoDB;
+- MongoDB.
 
 ## Entre em contato
 <a href="https://www.linkedin.com/in/khyradeoliveira">
